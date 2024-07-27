@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Sports Club</title>
+    
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+    }
+    body{
+        background-color: #f2f2f2;
+    }
+    .heading{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 20px auto;
+    }
+    .container{
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px 20px;
+    }
+    .about{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .about-image{
+        flex: 1;
+        margin-right: 40px;
+        overflow: hidden;
+
+    }
+    .about-image img{
+        max-width: 100%;
+        height: auto;
+        display: block;
+        transition: 0.5s ease;
+    }
+    .about-image:hover img{
+        transform: scale(1.2);
+    }
+    .about-content{
+        flex: 1;
+    }
+    .about-content h2{
+        font-size: 23px;
+        margin-bottom: 15px;
+        color: #333;
+    }
+    .about-content p{
+        font-size: 18px;
+        line-height: 1.5;
+        color: #666;
+    }
+    
+       
+     @media screen and (max-width: 768px) {
+        .heading{
+            padding: 0px 20px;
+        }
+        .heading h1{
+            font-size: 36px;
+        }
+        .heading p{
+            font-size: 17px;
+            margin-bottom: 0px;
+
+        }
+        .container{
+            padding: 0px;
+        }
+        .about{
+            padding: 20px;
+            flex-direction: column;
+        }
+        .about-image{
+            margin-right: 0px;
+            margin-bottom: 20px;
+        }
+        .about-content p{
+            padding: 0px;
+            font-size: 16px;
+        }
+        
+        
+     }
+     .heading1{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 20px auto;
+     }
+     .container1{
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px 20px;
+    }
+    .about1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .about-image1{
+        flex: 1;
+        margin-right: 40px;
+        overflow: hidden;
+
+    }
+    .about-image1 img{
+        max-width: 100%;
+        height: auto;
+        display: block;
+        transition: 0.5s ease;
+    }
+    .about-image1:hover img{
+        transform: scale(1.2);
+    }
+    .about-content1{
+        flex: 1;
+    }
+    .about-content1 h2{
+        font-size: 23px;
+        margin-bottom: 15px;
+        color: #333;
+    }
+    .about-content1 p{
+        font-size: 18px;
+        line-height: 1.5;
+        color: #666;
+    }
+    @media screen and (max-width: 768px){
+        .container1{
+            padding: 0px;
+        }
+        .about1{
+            padding: 20px;
+            flex-direction: column;
+        }
+        .about-image1{
+            margin-left: 0px;
+            margin-bottom: 20px;
+        }
+        .about-content1 p{
+            padding: 0px;
+            font-size: 16px;
+        }
+    }
+    .container2{
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px 20px;
+    }
+    .about2{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .about-image2{
+        flex: 1;
+        margin-right: 40px;
+        overflow: hidden;
+
+    }
+    .about-image2 img{
+        max-width: 100%;
+        height: auto;
+        display: block;
+        transition: 0.5s ease;
+    }
+    .about-image2:hover img{
+        transform: scale(1.2);
+    }
+    .about-content2{
+        flex: 1;
+    }
+    .about-content2 h2{
+        font-size: 23px;
+        margin-bottom: 15px;
+        color: #333;
+    }
+    .about-content2 p{
+        font-size: 18px;
+        line-height: 1.5;
+        color: #666;
+    }
+    @media screen and (max-width: 768px){
+        .container2{
+            padding: 0px;
+        }
+        .about2{
+            padding: 20px;
+            flex-direction: column;
+        }
+        .about-image2{
+            margin-left: 0px;
+            margin-bottom: 20px;
+        }
+        .about-content2 p{
+            padding: 0px;
+            font-size: 16px;
+        }
+    }
+</style> 
+    
+
+<body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg bg-info">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="/images/sports club.png" alt="" height="60" width="80"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutus">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="membership">Membership</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Facilities
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Indoor Sports</a></li>
+                  <li><a class="dropdown-item" href="#">Outdoor Sports</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Recreation</a></li>
+                </ul>
+              </li>
+            </ul>
+            <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!-- navbar end -->
+    
+    <div class="heading">
+        <h1><b><u>About Us</u></b></h1>
+        <p>A sports club or sporting club, sometimes an athletics club or sports society or sports association, is a group of people formed for the purpose of playing </p>
+
+    </div>
+    <div class="container">
+        <section class="about">
+            <div class="about-image">
+                <img src="images/about.jpg" alt="" >
+            </div>
+            <div class="about-content">
+                <h2><u>Indoor Sports<i></i></u></h2>
+                <p>Indoor games are a great way to spend time with family and friends while staying indoors. These games can be played in the comfort of one's home, making them perfect for bad weather or when outdoor activities are not feasible. Indoor games come in many different types, such as board games, card games, video games, indoor sports, puzzles, role-playing games, and trivia games. They offer a wide range of benefits, including physical and mental exercise, socialization, stress relief, and skill development. Many indoor games are also educational and can help improve knowledge and skills. Overall, indoor games provide a fun and entertaining way to pass the time, and are suitable for people of all ages.</p>
+                
+            </div>
+           
+        </section>
+       
+    </div>
+    <div class="heading1">
+        <h1><u><b>Indoor Sports Available</b></u></h1>
+        <ul style="list-style-type: decimal;">
+            <li>Ludo</li>
+            <li>Pool</li>
+            <li>Carrom</li>
+            <li>Boxing</li>
+            <li>Badminton</li>
+            <li>Basket Ball</li>
+            <li>Table Tannis</li>
+
+        </ul> 
+        
+    </div>
+    
+    <div class="container1">
+        <div class="about-content1">
+            <h2><u>Outdoor Sports<i></i></u></h2>
+            <p>We play different games. The games which we play outside our home are called outdoor games. The games which can be played inside our home are called indoor games.
+
+                Games make us divert our mind from the daily routine and the stress of life. When we play games, we get relief from all our tensions. Playing outdoor games makes our bones stronger. We can get our immunity build by playing. In fact, the overall health problems get resolved by playing these games. They refresh our mind and body.On the other hand, playing games on electronic gadgets like mobile phones and computers harms people’s especially of children’s eyesight. It is also it makes one lazy and inactive. Outdoor games help children to develop important life skills. Children learn to communicate with people confidently. They develop a competitive spirit in them. They also develop a positive attitude.</p>
+            
+        </div>
+        <section class="about1">
+            <div class="about-image1">
+                <img src="images/outdoor.jpg" alt="" >
+            </div>
+            
+           
+        </section> 
+       
+    </div>
+
+    <div class="heading1">
+        <h1><u><b>Outdoor Sports Available</b></u></h1>
+        <ul style="list-style-type: decimal;">
+            <li>Cricket</li>
+            <li>Football</li>
+            <li>Hockey</li>
+            <li>Baseball</li>
+            <li>Climbing</li>
+            <li>Gymnastics</li>
+            <li>Volleyball</li>
+
+        </ul> 
+        
+    </div>
+
+    <div class="container2">
+        <section class="about2">
+            <div class="about-image2">
+                <img src="images/recreation.jpg" alt="" >
+            </div>
+            <div class="about-content2">
+                <h2><u>Recreations<i></i></u></h2>
+                <p>Recreational sports are those activities where the primary purpose of the activity is participation, with the related goals of improved physical fitness, fun, and social involvement often prominent. Recreational sports are usually perceived as being less stressful, both physically and mentally, on the participants.Recreational activities are programs for joy, delight, pleasure which are for fun that are done by individuals whenever they have free time instead of getting some rest like sleep. It is essential for every individual.  It can be shared or alone, lively or dull, outdoors or indoors, safe or harmful.</p>
+                
+            </div>
+           
+        </section>
+       
+    </div>
+    <div class="heading2">
+        <h1><u><b>Recreation Sports Available</b></u></h1>
+        <ul style="list-style-type: decimal;">
+            <li>Yoga</li>
+            <li>Cycling</li>
+            <li>Swimming</li>
+            <li>Ice skating</li>
+            <li>Gardening</li>
+            <li>Camping</li>
+            <li>Aerobics</li>
+
+        </ul> 
+        
+    </div>
+</body>
+</html>
